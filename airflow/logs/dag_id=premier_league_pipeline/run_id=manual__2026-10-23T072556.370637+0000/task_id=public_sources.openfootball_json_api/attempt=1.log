@@ -1,0 +1,20 @@
+[2026-10-23T07:25:58.307+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-10-23T07:25:58.320+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: premier_league_pipeline.public_sources.openfootball_json_api manual__2026-10-23T07:25:56.370637+00:00 [queued]>
+[2026-10-23T07:25:58.325+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: premier_league_pipeline.public_sources.openfootball_json_api manual__2026-10-23T07:25:56.370637+00:00 [queued]>
+[2026-10-23T07:25:58.326+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2026-10-23T07:25:58.335+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): public_sources.openfootball_json_api> on 2026-10-23 07:25:56.370637+00:00
+[2026-10-23T07:25:58.339+0000] {standard_task_runner.py:72} INFO - Started process 241 to run task
+[2026-10-23T07:25:58.343+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'premier_league_pipeline', 'public_sources.openfootball_json_api', 'manual__2026-10-23T07:25:56.370637+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/premier_league_pipeline.py', '--cfg-path', '/tmp/tmp7uvlj2kr']
+[2026-10-23T07:25:58.346+0000] {standard_task_runner.py:105} INFO - Job 9: Subtask public_sources.openfootball_json_api
+[2026-10-23T07:25:58.573+0000] {task_command.py:467} INFO - Running <TaskInstance: premier_league_pipeline.public_sources.openfootball_json_api manual__2026-10-23T07:25:56.370637+00:00 [running]> on host 299192da5185
+[2026-10-23T07:25:58.627+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='premier_league_pipeline' AIRFLOW_CTX_TASK_ID='public_sources.openfootball_json_api' AIRFLOW_CTX_EXECUTION_DATE='2026-10-23T07:25:56.370637+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-10-23T07:25:56.370637+00:00'
+[2026-10-23T07:25:58.629+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-10-23T07:25:58.752+0000] {premier_league_pipeline.py:69} WARNING - OpenFootball season failed 2025-26: 'list' object has no attribute 'get'
+[2026-10-23T07:25:58.780+0000] {premier_league_pipeline.py:69} WARNING - OpenFootball season failed 2026-27: 'list' object has no attribute 'get'
+[2026-10-23T07:25:58.789+0000] {premier_league_pipeline.py:27} INFO - OpenFootball JSON API: 1163 records; error=2025-26: AttributeError: 'list' object has no attribute 'get'; 2026-27: AttributeError: 'list' object has no attribute 'get'
+[2026-10-23T07:25:58.791+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-10-23T07:25:58.799+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-10-23T07:25:58.800+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=premier_league_pipeline, task_id=public_sources.openfootball_json_api, run_id=manual__2026-10-23T07:25:56.370637+00:00, execution_date=20261023T072556, start_date=20261023T072558, end_date=20261023T072558
+[2026-10-23T07:25:58.839+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-10-23T07:25:58.967+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-10-23T07:25:58.972+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

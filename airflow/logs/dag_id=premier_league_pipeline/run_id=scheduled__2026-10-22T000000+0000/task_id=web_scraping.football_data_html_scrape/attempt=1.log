@@ -1,0 +1,19 @@
+[2026-10-23T07:23:11.254+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-10-23T07:23:11.328+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: premier_league_pipeline.web_scraping.football_data_html_scrape scheduled__2026-10-22T00:00:00+00:00 [queued]>
+[2026-10-23T07:23:11.341+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: premier_league_pipeline.web_scraping.football_data_html_scrape scheduled__2026-10-22T00:00:00+00:00 [queued]>
+[2026-10-23T07:23:11.342+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2026-10-23T07:23:11.351+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): web_scraping.football_data_html_scrape> on 2026-10-22 00:00:00+00:00
+[2026-10-23T07:23:11.356+0000] {standard_task_runner.py:72} INFO - Started process 191 to run task
+[2026-10-23T07:23:11.359+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'premier_league_pipeline', 'web_scraping.football_data_html_scrape', 'scheduled__2026-10-22T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/premier_league_pipeline.py', '--cfg-path', '/tmp/tmp1h77j2bm']
+[2026-10-23T07:23:11.362+0000] {standard_task_runner.py:105} INFO - Job 2: Subtask web_scraping.football_data_html_scrape
+[2026-10-23T07:23:11.608+0000] {task_command.py:467} INFO - Running <TaskInstance: premier_league_pipeline.web_scraping.football_data_html_scrape scheduled__2026-10-22T00:00:00+00:00 [running]> on host 299192da5185
+[2026-10-23T07:23:11.665+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='premier_league_pipeline' AIRFLOW_CTX_TASK_ID='web_scraping.football_data_html_scrape' AIRFLOW_CTX_EXECUTION_DATE='2026-10-22T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-10-22T00:00:00+00:00'
+[2026-10-23T07:23:11.667+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-10-23T07:23:12.689+0000] {premier_league_pipeline.py:153} WARNING - robots.txt check failed; skip scrape: HTTPSConnectionPool(host='www.football-data.co.uk', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))
+[2026-10-23T07:23:12.695+0000] {premier_league_pipeline.py:27} INFO - Football-Data.co.uk HTML scraping: 0 records; error=robots.txt disallows or could not be verified; safely skipped
+[2026-10-23T07:23:12.696+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-10-23T07:23:12.708+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-10-23T07:23:12.708+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=premier_league_pipeline, task_id=web_scraping.football_data_html_scrape, run_id=scheduled__2026-10-22T00:00:00+00:00, execution_date=20261022T000000, start_date=20261023T072311, end_date=20261023T072312
+[2026-10-23T07:23:12.737+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-10-23T07:23:12.869+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-10-23T07:23:12.871+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
