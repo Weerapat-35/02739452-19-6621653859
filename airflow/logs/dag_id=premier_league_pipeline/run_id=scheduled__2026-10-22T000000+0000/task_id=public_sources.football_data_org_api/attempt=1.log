@@ -1,0 +1,57 @@
+[2026-10-23T08:30:50.101+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-10-23T08:30:50.114+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: premier_league_pipeline.public_sources.football_data_org_api scheduled__2026-10-22T00:00:00+00:00 [queued]>
+[2026-10-23T08:30:50.119+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: premier_league_pipeline.public_sources.football_data_org_api scheduled__2026-10-22T00:00:00+00:00 [queued]>
+[2026-10-23T08:30:50.122+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2026-10-23T08:30:50.131+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): public_sources.football_data_org_api> on 2026-10-22 00:00:00+00:00
+[2026-10-23T08:30:50.136+0000] {standard_task_runner.py:72} INFO - Started process 194 to run task
+[2026-10-23T08:30:50.139+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'premier_league_pipeline', 'public_sources.football_data_org_api', 'scheduled__2026-10-22T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/premier_league_pipeline.py', '--cfg-path', '/tmp/tmpnkl5x8ka']
+[2026-10-23T08:30:50.142+0000] {standard_task_runner.py:105} INFO - Job 4: Subtask public_sources.football_data_org_api
+[2026-10-23T08:30:50.344+0000] {task_command.py:467} INFO - Running <TaskInstance: premier_league_pipeline.public_sources.football_data_org_api scheduled__2026-10-22T00:00:00+00:00 [running]> on host a11c619175d7
+[2026-10-23T08:30:50.411+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='premier_league_pipeline' AIRFLOW_CTX_TASK_ID='public_sources.football_data_org_api' AIRFLOW_CTX_EXECUTION_DATE='2026-10-22T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-10-22T00:00:00+00:00'
+[2026-10-23T08:30:50.412+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-10-23T08:30:50.436+0000] {premier_league_pipeline.py:30} INFO - football-data.org API: 0 records; error=FOOTBALL_DATA_API_KEY is not set; source skipped
+[2026-10-23T08:30:50.437+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-10-23T08:30:50.445+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-10-23T08:30:50.446+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=premier_league_pipeline, task_id=public_sources.football_data_org_api, run_id=scheduled__2026-10-22T00:00:00+00:00, execution_date=20261022T000000, start_date=20261023T083050, end_date=20261023T083050
+[2026-10-23T08:30:50.473+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-10-23T08:30:50.600+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-10-23T08:30:50.605+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-10-23T08:33:24.480+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-10-23T08:33:24.494+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: premier_league_pipeline.public_sources.football_data_org_api scheduled__2026-10-22T00:00:00+00:00 [queued]>
+[2026-10-23T08:33:24.500+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: premier_league_pipeline.public_sources.football_data_org_api scheduled__2026-10-22T00:00:00+00:00 [queued]>
+[2026-10-23T08:33:24.500+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2026-10-23T08:33:24.513+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): public_sources.football_data_org_api> on 2026-10-22 00:00:00+00:00
+[2026-10-23T08:33:24.517+0000] {standard_task_runner.py:72} INFO - Started process 193 to run task
+[2026-10-23T08:33:24.521+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'premier_league_pipeline', 'public_sources.football_data_org_api', 'scheduled__2026-10-22T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/premier_league_pipeline.py', '--cfg-path', '/tmp/tmp5uhxic1c']
+[2026-10-23T08:33:24.525+0000] {standard_task_runner.py:105} INFO - Job 3: Subtask public_sources.football_data_org_api
+[2026-10-23T08:33:24.740+0000] {task_command.py:467} INFO - Running <TaskInstance: premier_league_pipeline.public_sources.football_data_org_api scheduled__2026-10-22T00:00:00+00:00 [running]> on host 653d1acade86
+[2026-10-23T08:33:24.812+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='premier_league_pipeline' AIRFLOW_CTX_TASK_ID='public_sources.football_data_org_api' AIRFLOW_CTX_EXECUTION_DATE='2026-10-22T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-10-22T00:00:00+00:00'
+[2026-10-23T08:33:24.813+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-10-23T08:33:24.839+0000] {premier_league_pipeline.py:30} INFO - football-data.org API: 0 records; error=FOOTBALL_DATA_API_KEY is not set; source skipped
+[2026-10-23T08:33:24.839+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-10-23T08:33:24.846+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-10-23T08:33:24.847+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=premier_league_pipeline, task_id=public_sources.football_data_org_api, run_id=scheduled__2026-10-22T00:00:00+00:00, execution_date=20261022T000000, start_date=20261023T083324, end_date=20261023T083324
+[2026-10-23T08:33:24.896+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-10-23T08:33:25.020+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-10-23T08:33:25.025+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-10-23T08:43:44.951+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-10-23T08:43:44.969+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: premier_league_pipeline.public_sources.football_data_org_api scheduled__2026-10-22T00:00:00+00:00 [queued]>
+[2026-10-23T08:43:44.977+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: premier_league_pipeline.public_sources.football_data_org_api scheduled__2026-10-22T00:00:00+00:00 [queued]>
+[2026-10-23T08:43:44.978+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2026-10-23T08:43:44.993+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): public_sources.football_data_org_api> on 2026-10-22 00:00:00+00:00
+[2026-10-23T08:43:44.999+0000] {standard_task_runner.py:72} INFO - Started process 192 to run task
+[2026-10-23T08:43:45.002+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'premier_league_pipeline', 'public_sources.football_data_org_api', 'scheduled__2026-10-22T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/premier_league_pipeline.py', '--cfg-path', '/tmp/tmpypuvu860']
+[2026-10-23T08:43:45.006+0000] {standard_task_runner.py:105} INFO - Job 3: Subtask public_sources.football_data_org_api
+[2026-10-23T08:43:45.229+0000] {task_command.py:467} INFO - Running <TaskInstance: premier_league_pipeline.public_sources.football_data_org_api scheduled__2026-10-22T00:00:00+00:00 [running]> on host ce7effe755fb
+[2026-10-23T08:43:45.317+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='premier_league_pipeline' AIRFLOW_CTX_TASK_ID='public_sources.football_data_org_api' AIRFLOW_CTX_EXECUTION_DATE='2026-10-22T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-10-22T00:00:00+00:00'
+[2026-10-23T08:43:45.319+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-10-23T08:43:46.769+0000] {premier_league_pipeline.py:232} INFO - football-data.org 2024/2025: 380 rows, 0 skipped of 380
+[2026-10-23T08:43:55.009+0000] {premier_league_pipeline.py:232} INFO - football-data.org 2025/2026: 380 rows, 0 skipped of 380
+[2026-10-23T08:44:02.779+0000] {premier_league_pipeline.py:232} INFO - football-data.org 2026/2027: 380 rows, 0 skipped of 380
+[2026-10-23T08:44:02.786+0000] {premier_league_pipeline.py:30} INFO - football-data.org API: 1140 records; error=None
+[2026-10-23T08:44:02.787+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-10-23T08:44:02.796+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-10-23T08:44:02.798+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=premier_league_pipeline, task_id=public_sources.football_data_org_api, run_id=scheduled__2026-10-22T00:00:00+00:00, execution_date=20261022T000000, start_date=20261023T084344, end_date=20261023T084402
+[2026-10-23T08:44:02.826+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-10-23T08:44:02.841+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-10-23T08:44:02.849+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

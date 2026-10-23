@@ -1,0 +1,57 @@
+[2026-10-23T08:30:59.035+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-10-23T08:30:59.050+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: premier_league_pipeline.load_postgres_upsert scheduled__2026-10-22T00:00:00+00:00 [queued]>
+[2026-10-23T08:30:59.057+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: premier_league_pipeline.load_postgres_upsert scheduled__2026-10-22T00:00:00+00:00 [queued]>
+[2026-10-23T08:30:59.061+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2026-10-23T08:30:59.071+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): load_postgres_upsert> on 2026-10-22 00:00:00+00:00
+[2026-10-23T08:30:59.076+0000] {standard_task_runner.py:72} INFO - Started process 207 to run task
+[2026-10-23T08:30:59.078+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'premier_league_pipeline', 'load_postgres_upsert', 'scheduled__2026-10-22T00:00:00+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/premier_league_pipeline.py', '--cfg-path', '/tmp/tmp1bqmxm8h']
+[2026-10-23T08:30:59.081+0000] {standard_task_runner.py:105} INFO - Job 7: Subtask load_postgres_upsert
+[2026-10-23T08:30:59.230+0000] {task_command.py:467} INFO - Running <TaskInstance: premier_league_pipeline.load_postgres_upsert scheduled__2026-10-22T00:00:00+00:00 [running]> on host a11c619175d7
+[2026-10-23T08:30:59.283+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='premier_league_pipeline' AIRFLOW_CTX_TASK_ID='load_postgres_upsert' AIRFLOW_CTX_EXECUTION_DATE='2026-10-22T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-10-22T00:00:00+00:00'
+[2026-10-23T08:30:59.285+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-10-23T08:30:59.297+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2026-10-23T08:30:59.298+0000] {base.py:84} INFO - Retrieving connection 'football_db'
+[2026-10-23T08:30:59.717+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-10-23T08:30:59.725+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-10-23T08:30:59.726+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=premier_league_pipeline, task_id=load_postgres_upsert, run_id=scheduled__2026-10-22T00:00:00+00:00, execution_date=20261022T000000, start_date=20261023T083059, end_date=20261023T083059
+[2026-10-23T08:30:59.777+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-10-23T08:30:59.898+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-10-23T08:30:59.903+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-10-23T08:33:33.451+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-10-23T08:33:33.466+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: premier_league_pipeline.load_postgres_upsert scheduled__2026-10-22T00:00:00+00:00 [queued]>
+[2026-10-23T08:33:33.472+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: premier_league_pipeline.load_postgres_upsert scheduled__2026-10-22T00:00:00+00:00 [queued]>
+[2026-10-23T08:33:33.473+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2026-10-23T08:33:33.483+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): load_postgres_upsert> on 2026-10-22 00:00:00+00:00
+[2026-10-23T08:33:33.488+0000] {standard_task_runner.py:72} INFO - Started process 207 to run task
+[2026-10-23T08:33:33.490+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'premier_league_pipeline', 'load_postgres_upsert', 'scheduled__2026-10-22T00:00:00+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/premier_league_pipeline.py', '--cfg-path', '/tmp/tmpv3f7hdac']
+[2026-10-23T08:33:33.493+0000] {standard_task_runner.py:105} INFO - Job 7: Subtask load_postgres_upsert
+[2026-10-23T08:33:33.648+0000] {task_command.py:467} INFO - Running <TaskInstance: premier_league_pipeline.load_postgres_upsert scheduled__2026-10-22T00:00:00+00:00 [running]> on host 653d1acade86
+[2026-10-23T08:33:33.709+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='premier_league_pipeline' AIRFLOW_CTX_TASK_ID='load_postgres_upsert' AIRFLOW_CTX_EXECUTION_DATE='2026-10-22T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-10-22T00:00:00+00:00'
+[2026-10-23T08:33:33.711+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-10-23T08:33:33.728+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2026-10-23T08:33:33.729+0000] {base.py:84} INFO - Retrieving connection 'football_db'
+[2026-10-23T08:33:34.126+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-10-23T08:33:34.135+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-10-23T08:33:34.136+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=premier_league_pipeline, task_id=load_postgres_upsert, run_id=scheduled__2026-10-22T00:00:00+00:00, execution_date=20261022T000000, start_date=20261023T083333, end_date=20261023T083334
+[2026-10-23T08:33:34.185+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-10-23T08:33:34.296+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-10-23T08:33:34.301+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-10-23T08:44:06.782+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-10-23T08:44:06.797+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: premier_league_pipeline.load_postgres_upsert scheduled__2026-10-22T00:00:00+00:00 [queued]>
+[2026-10-23T08:44:06.803+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: premier_league_pipeline.load_postgres_upsert scheduled__2026-10-22T00:00:00+00:00 [queued]>
+[2026-10-23T08:44:06.803+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2026-10-23T08:44:06.813+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): load_postgres_upsert> on 2026-10-22 00:00:00+00:00
+[2026-10-23T08:44:06.818+0000] {standard_task_runner.py:72} INFO - Started process 207 to run task
+[2026-10-23T08:44:06.820+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'premier_league_pipeline', 'load_postgres_upsert', 'scheduled__2026-10-22T00:00:00+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/premier_league_pipeline.py', '--cfg-path', '/tmp/tmpfl26q4cx']
+[2026-10-23T08:44:06.822+0000] {standard_task_runner.py:105} INFO - Job 7: Subtask load_postgres_upsert
+[2026-10-23T08:44:06.969+0000] {task_command.py:467} INFO - Running <TaskInstance: premier_league_pipeline.load_postgres_upsert scheduled__2026-10-22T00:00:00+00:00 [running]> on host ce7effe755fb
+[2026-10-23T08:44:07.025+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='premier_league_pipeline' AIRFLOW_CTX_TASK_ID='load_postgres_upsert' AIRFLOW_CTX_EXECUTION_DATE='2026-10-22T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-10-22T00:00:00+00:00'
+[2026-10-23T08:44:07.027+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-10-23T08:44:07.040+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2026-10-23T08:44:07.040+0000] {base.py:84} INFO - Retrieving connection 'football_db'
+[2026-10-23T08:44:07.439+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-10-23T08:44:07.446+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-10-23T08:44:07.447+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=premier_league_pipeline, task_id=load_postgres_upsert, run_id=scheduled__2026-10-22T00:00:00+00:00, execution_date=20261022T000000, start_date=20261023T084406, end_date=20261023T084407
+[2026-10-23T08:44:07.475+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-10-23T08:44:07.594+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-10-23T08:44:07.600+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
